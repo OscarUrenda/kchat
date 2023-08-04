@@ -2,14 +2,14 @@
 ![](https://github.com/php-kchat/kchat/blob/master/public/logo/3.svg)
 
 # KChat
-#### PHP Based Chat Application.
+#### Aplicación Basada en chat con PHP.
 
-## Requirements
+## Requerimientos
 
-* Web Server Apache or Nginx
+* Servidor web Apache o Nginx
 * MySQL 5.7
 * PHP version >= 8.0
-    * Required extensions :
+    * Extensiones requeridas :
         * ctype
         * curl
         * dom
@@ -27,28 +27,28 @@
         * xml
         * xmlwriter
 
-## Manual installation
+## Manual de instalación
 
-#### Downlaod Kchat Files
+#### Descarga los archivos de Kchat
 
-#### Using git
+#### Usando git
 
 ```
 git clone https://github.com/php-kchat/kchat.git
 ```
 
-#### Install Composer
+#### Instalar Composer
 
 ```
 composer install
 ```
 
-> OR
+> O a través de
 
 [Download Zip](https://github.com/php-kchat/kchat/archive/refs/heads/master.zip)
 and Extract to your Web Directory
 
-#### Install Composer
+#### Instalar Composer
 
 ```
 composer install
@@ -56,20 +56,20 @@ composer install
 
 > OR
 
-#### Using with Composer
+#### Usar Composer
 
 ```
 composer create-project php-kchat/kchat
 ```
 
-### Run following command to complete installation
+### Corre el siguiente comando para completar la instalación
 
-Create ``.env`` if not exist.
+Crea ``.env`` si no existe.
 ```
 cp .env.example .env
 ```
 
-Configure database details in ``.env``
+Configura los settings de la base de datos en ``.env``
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -79,23 +79,23 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Generate ``APP_KEY`` in the ``.env`` file:
+Genera una ``APP_KEY`` en ``.env``:
 ```
 php artisan key:generate
 ```
 
-Create tables:
+Crea tablas:
 ```
 php artisan migrate
 ```
 
-Give a Writable Permission on
+Otorga permisos en:
 
 - storage/*
 - bootstrap/cache/*
 - public/images/*
 
-Sign-in your first user and login
+Crea tu primer usuario y logeate
 
 #### Maintainers
 
