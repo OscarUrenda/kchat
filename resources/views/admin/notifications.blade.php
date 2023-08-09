@@ -67,7 +67,7 @@
 @section('script')
 <script>
 	function delete_notificatios(){
-		kchat_alert("Are you sure you want to delete <strong>{{ __("lang.notification") }}s</strong>?",(function(){__post('/notification/delete',{'ids':getSelectedID()});}));
+		kchat_alert("Seguro que quiere borrar le historial de <strong>{{ __("lang.notification") }}s</strong>?",(function(){__post('/notification/delete',{'ids':getSelectedID()});}));
 	}
 </script>
 @endsection
