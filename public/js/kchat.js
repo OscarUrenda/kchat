@@ -387,9 +387,9 @@ setSelectedCount();
 // Conversation page
 
 function delete_convos(){
-    kchat_alert("Are you sure you want to <strong>delete</strong> conversations?",(function(){__post('/conversations/delete',{'ids':getSelectedID()});}));
+    kchat_alert("Está seguro de <strong>borrar</strong> las conversaciones?",(function(){__post('/conversations/delete',{'ids':getSelectedID()});}));
 }
 
 function delete_convo(id){
-    kchat_alert("Are you sure you want to <strong>delete</strong> conversations?",(function(){__post('/conversations/delete',{'ids':[id]});}));
+    kchat_alert("Está seguro de <strong>borrar</strong> las conversaciones?",(function(){__post('/conversations/delete',{'ids':[id]});}));
 }
