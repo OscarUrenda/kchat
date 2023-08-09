@@ -43,10 +43,10 @@
                         <div class="col">
                            <div class="row">
                               <div class="col">
-                                 <div class="form-group"> <label>First {{ __("lang.name") }}</label> <input class="form-control profile" type="text" name="first_name" placeholder="First {{ __("lang.name") }}" id="first_name" value="{{ $profile->first_name }}"></div>
+                                 <div class="form-group"> <label>{{ __("lang.name") }}</label> <input class="form-control profile" type="text" name="first_name" placeholder="First {{ __("lang.name") }}" id="first_name" value="{{ $profile->first_name }}"></div>
                               </div>
                               <div class="col">
-                                 <div class="form-group"> <label>Last {{ __("lang.name") }}</label> <input class="form-control profile" type="text" name="last_name" placeholder="Last {{ __("lang.name") }}" id="last_name" value="{{ $profile->last_name }}"></div>
+                                 <div class="form-group"> <label>Apellido</label> <input class="form-control profile" type="text" name="last_name" placeholder="Last {{ __("lang.name") }}" id="last_name" value="{{ $profile->last_name }}"></div>
                               </div>
                            </div>
                            <div class="row">
@@ -68,7 +68,7 @@
                            </div>
                            <div class="row">
                               <div class="col mb-3">
-                                 <div class="form-group"> <label>About</label><textarea class="form-control profile" rows="5" placeholder="My Bio" id="about">{{ $profile->about }}</textarea></div>
+                                 <div class="form-group"> <label>Acerca de mí</label><textarea class="form-control profile" rows="5" placeholder="Mi descripción" id="about">{{ $profile->about }}</textarea></div>
                               </div>
                            </div>
                         </div>
@@ -78,12 +78,12 @@
                            <div class="mb-2"><b>{{ __("lang.change-password") }}</b></div>
                            <div class="row">
                               <div class="col">
-                                 <div class="form-group"> <label>New Password</label> <input class="form-control profile" type="password" placeholder="••••••" id="password" ></div>
+                                 <div class="form-group"> <label>Nueva contraseña</label> <input class="form-control profile" type="password" placeholder="••••••" id="password" ></div>
                               </div>
                            </div>
                            <div class="row">
                               <div class="col">
-                                 <div class="form-group"> <label>Confirm <span class="d-none d-xl-inline">Password</span></label> <input class="form-control profile" type="password" id="repassword" placeholder="••••••"></div>
+                                 <div class="form-group"> <label>Confirmar <span class="d-none d-xl-inline">contraseña</span></label> <input class="form-control profile" type="password" id="repassword" placeholder="••••••"></div>
                               </div>
                            </div>
                         </div>

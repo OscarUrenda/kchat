@@ -67,7 +67,7 @@
 @section('script')
 <script>
 	function delete_activity(){
-		kchat_alert("Are you sure you want to delete <strong>Activities</strong>?",(function(){__post('/activity/delete',{'ids':getSelectedID()});}));
+		kchat_alert("Seguro que quiere borrar su historial de <strong>Actividades</strong>?",(function(){__post('/activity/delete',{'ids':getSelectedID()});}));
 	}
 </script>
 @endsection
